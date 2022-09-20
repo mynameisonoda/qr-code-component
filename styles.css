@@ -1,36 +1,48 @@
+:root {
+    --h1-text-color: hsl(218, 44%, 22%);
+    --p-text-color: hsl(220, 15%, 55%);
+    --main-bg-color: hsl(212, 45%, 89%);
+    --card-color: hsl(0, 0%, 100%);
+}
+
 body {
-    background-color: hsl(212, 45%, 89%);
+    background-color: var(--main-bg-color);
+    min-height: 100vh;
+    display: flex;
 }
 
 .text-container {
     font-family: 'Outfit', sans-serif;
-    margin: 0 36px;
+    margin: 0 2.25em;
 }
 
-h3 {
+h1 {
     font-weight: 700;
-    color: hsl(218, 44%, 22%)
+    font-size: 1.25em;
+    color: var(--h1-text-color)
 }
 
 p {
-    font-size: 15px;
+    font-size: 1em;
     font-weight: 400;
-    color: hsl(220, 15%, 55%)
+    color: var(--p-text-color)
 }
-img, .qr-container {
-    border-radius: 10px;
+img, .flex-container {
+    border-radius: 0.625em;
 }
 
 img {
-    width: 270px;
+    width: 16.875em;
+    height: 16.875em;
 }
 
-.qr-container {
-    top: 200px;
-    position: relative;
-    padding: 15px 0 20px;
+.flex-container {
     margin: auto;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding: 1em 0 1.25em;
     text-align: center;
-    background-color: hsl(0, 0%, 100%);
-    width: 300px;
+    background-color: var(--card-color);
+    width: 18.75em;
 }
